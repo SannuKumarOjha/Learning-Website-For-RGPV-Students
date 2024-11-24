@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color: #fff;
+}
+#myImage{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 100px;
+    opacity: 0.4;
+    border-radius: 40px;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,126,1) 40%, rgba(141,209,240,1) 82%, rgba(61,23,180,1) 100%, rgba(0,212,255,1) 100%);
+    flex-direction: column;
+}
+.row{
+    width: 100vw;
+    height: 45px;
+    background: rgb(128,24,202);
+    background: linear-gradient(90deg, rgba(128,24,202,1) 56%, rgba(157,23,190,1) 63%, rgba(65,23,180,1) 94%);
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 10vw;
+    overflow: hidden;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.row a{
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 18px;
+    background-color: rgb(168, 1, 251);
+    border-radius: 10px;
+    transition: all .1s ease-in-out;
+}
+
+.row a:hover{
+    text-decoration: underline;
+    background-color: rgba(168, 1, 251, 0.700);
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 6vw;
+}
+h1{
+    text-align: center;
+}
+.myDetails{
+    margin-bottom: 50px;
+}
+#insta{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+}
+#facebook{
+    font-size: 26px;
+    cursor: pointer;
+}
+#linkedin{
+    font-size: 27px;
+    cursor: pointer;
+}
+
+@media (max-width:700px){
+     h2{
+        font-size: 18px;
+     }
+     .row a{
+        font-size: 14px;
+        padding: 3px 8px;
+     }
+}
+
+@media (max-width: 520px){
+    .row{
+        padding: 0 2vw;
+    }
+    h2{
+        font-size: 16px;
+     }
+     .row a{
+        font-size: 13px;
+        padding: 3px 8px;
+     }
+}
+
+@media (max-width: 398px){
+    h1{
+        font-size: 20px;
+    }
+    .row{
+        padding: 0 1vw;
+    }
+    h2{
+        font-size: 14px;
+     }
+     .row a{
+        font-size: 12px;
+        padding: 2px 6px;
+     }
+}
